@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/adminLocker/locale/es_ES/locale.xml
+  *
+  * Copyright (c) 2014 Marc Bria Ramírez, Universitat Autònoma de Barcelona
+  * Distributed under the GNU GPL v3.
+  *
+  * Localization strings
+  -->
+ 
+<locale name="es_ES" full_name="Español (España)">
+	<message key="plugins.generic.adminlocker.displayName">Administration Locker</message>
+	<message key="plugins.generic.adminlocker.description">Este módulo bloquea los formularios de administración especificados para todos los usuarios no privilegiados de la revista.</message>
+  <message key="plugins.generic.adminlocker.notification.title">Este formulario està bloqueado</message>
+  <message key="plugins.generic.adminlocker.notification.description">Contacta con el administrador global del sitio si necesitas modificar algún valor.</message>
+</locale>

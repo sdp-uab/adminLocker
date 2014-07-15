@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+
+<!--
+  * plugins/generic/adminLocker/version.xml
+  *
+  * Copyright (c) 2014 Marc Bria Ramírez, Universitat Autònoma de Barcelona
+  * Distributed under the GNU GPL v3.
+  *
+  * Plugin version information.
+  -->
+<version>
+	<application>adminLocker</application>
+	<type>plugins.generic</type>
+	<release>1.0.0.0</release>
+	<date>2014-07-14</date>
+	<lazy-load>1</lazy-load>
+	<class>AdminLockerPlugin</class>
+</version>

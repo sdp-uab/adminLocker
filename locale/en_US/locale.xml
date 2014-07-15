@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/adminLocker/locale/en_US/locale.xml
+  *
+  * Copyright (c) 2014 Marc Bria Ramírez, Universitat Autònoma de Barcelona
+  * Distributed under the GNU GPL v3.
+  *
+  * Localization strings
+  -->
+ 
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.generic.adminlocker.displayName">Administration Locker</message>
+	<message key="plugins.generic.adminlocker.description">This Plugin locks the specified forms for every user except the pivileged ones. The module is configured via the plugin config file.</message>
+  <message key="plugins.generic.adminlocker.notification.title">This form is locked</message>
+  <message key="plugins.generic.adminlocker.notification.description">Contact your global site administrator if you need to modify a value.</message>
+</locale>

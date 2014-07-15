@@ -1,0 +1,46 @@
+/**
+ * Center info message
+ */
+div.adminlock.message.fixed {
+  margin: auto;
+  left:0; right:0;
+  top:0; bottom:0;
+  position: absolute;
+  width: 50%;
+  height: 200px;
+  border: #AAA solid 1px;
+  background: #EEE;
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif; 
+
+  -moz-box-shadow: 4px 4px 10px #888;  
+  -webkit-box-shadow: 4px 4px 10px #888;  
+  box-shadow:4px 4px 6px #888;
+}
+
+div.adminlock.message h3 {
+  font-size: 24px; 
+}
+
+div.adminlock.message form {
+  padding-top: 1em;
+}
+
+/**
+ * Content message
+ */
+div.adminlock.message.relative {
+  margin: auto;
+  width: 90%;
+  border: #AAA solid 1px;
+  background: #EEE;
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif; 
+  -moz-box-shadow: 4px 4px 10px #888;  
+  -webkit-box-shadow: 4px 4px 10px #888;  
+  box-shadow:4px 4px 6px #888;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
