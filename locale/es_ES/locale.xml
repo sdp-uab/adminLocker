@@ -13,8 +13,8 @@
 <locale name="es_ES" full_name="Español (España)">
 	<message key="plugins.generic.adminlocker.displayName">Administration Locker</message>
 	<message key="plugins.generic.adminlocker.description">Este módulo bloquea los formularios de administración especificados para todos los usuarios no privilegiados de la revista.</message>
-  <message key="plugins.generic.adminlocker.notification.title">Este formulario està bloqueado</message>
-  <message key="plugins.generic.adminlocker.notification.description">Contacta con el administrador global del sitio si necesitas modificar algún valor.</message>
+  <message key="plugins.generic.adminlocker.notification.title">Esta página está bloqueada</message>
+  <message key="plugins.generic.adminlocker.notification.description">Contacta con el administrador global del sitio si necesitas acceder.</message>
   <message key="plugins.generic.adminlocker.notification.goBack">Volver</message>
-  <message key="plugins.generic.adminlocker.debug.info">Para bloquear esta página, añade la siguiente línia al final del fixero de configuración del módulo [adminlocker].</message>
+  <message key="plugins.generic.adminlocker.debug.info">Para bloquear esta página, añade la siguiente línia al final del fixero de configuración del módulo [adminlocker]</message>
 </locale>

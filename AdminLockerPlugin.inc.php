@@ -58,17 +58,13 @@ class AdminLockerPlugin extends GenericPlugin {
         $lockConfig = parse_ini_file($pluginLinkedPath. '/config.inc.php', true);
 
         $allowedUsers = $lockConfig['allowedUsers']['user'];
-        $loggedInuser = $smarty->get_template_vars('loggedInuser');
+        $loggedInuser = $smarty->get_template_vars('loggedInUsername');
         $showPageTitle = $lockConfig['debug']['pageTitle'];
+        $whereAmI = $smarty->get_template_vars('pageTitle');
 
         if ( ! in_array($loggedInuser, $allowedUsers)) {
 
             $disabledPages = $lockConfig['disabledPages'];
-
-            $whereAmI = $smarty->get_template_vars('pageTitle');
-
-            $smarty->assign('myDisabledForms',$disabledPages);
-            $smarty->assign('whereAmI',$whereAmI);
 
             if ( array_key_exists($whereAmI, $disabledPages) ) {
 
@@ -83,12 +79,11 @@ class AdminLockerPlugin extends GenericPlugin {
 
                     if ($disabledPages[$whereAmI] == 'info') {
 
-                        // Improvements: 
-                        // Replace it all with an OJS template?
+                        // Improvement: Replace it all with an OJS template?
 
                         $pattern = '/<body.*<\/body>/s';
 
-                        $notification.="\t\t<form><input type=\"button\" value=\"".__('plugins.generic.adminlocker.notification.goBack')
+                        $notification.="\t\t<form><input type=\"button\" value=\"".__('plugins.generic.adminlocker.notification.goBack');
                         $notification.="\" onClick=\"history.go(-1);return true;\" /></form>";
 
                         $notificationHTML="<body id=\"$whereAmI\">\n".
@@ -159,6 +154,7 @@ class AdminLockerPlugin extends GenericPlugin {
         }
 
         if ($showPageTitle) {
+            // Helper: Show pageTitle smarty variable if config.inc.php requests for it.
             $notification =  '<div id="content"><div class="adminlock message relative">';
             $notification .= __('plugins.generic.adminlocker.debug.info') . ': <br />';
             $notification .= $whereAmI . ' = "info"</div>';
