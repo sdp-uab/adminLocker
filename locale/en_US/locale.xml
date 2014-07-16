@@ -15,4 +15,6 @@
 	<message key="plugins.generic.adminlocker.description">This Plugin locks the specified forms for every user except the pivileged ones. The module is configured via the plugin config file.</message>
   <message key="plugins.generic.adminlocker.notification.title">This form is locked</message>
   <message key="plugins.generic.adminlocker.notification.description">Contact your global site administrator if you need to modify a value.</message>
+  <message key="plugins.generic.adminlocker.notification.goBack">Go back</message>
+  <message key="plugins.generic.adminlocker.debug.info">To lock this page, add this line to the end of the [adminlocker] module's config file.</message>
 </locale>

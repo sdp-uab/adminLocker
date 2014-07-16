@@ -15,4 +15,6 @@
 	<message key="plugins.generic.adminlocker.description">Aquest mòdul bloqueja els formularis especificatsper a tots els usuaris no pivilegiats de la revista. La configuració del mòdul resideix al fitxer de configuració.</message>
   <message key="plugins.generic.adminlocker.notification.title">Aquest formulari està bloquejat</message>
   <message key="plugins.generic.adminlocker.notification.description">Contacta amb l'administrador global del lloc si necessites modificar algún valor.</message>
+  <message key="plugins.generic.adminlocker.notification.goBack">Tornar</message>
+  <message key="plugins.generic.adminlocker.debug.info">Per blocar aquesta pàgina, afegeix la següent línia al final del fitxer de configuració del mòdul [adminlocker].</message>
 </locale>

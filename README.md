@@ -49,7 +49,7 @@ be able to lock:
 Improvements/ideas/todos
 ========================
 
-- Extend the list of the "default" locked pages. * Diferent config for each journal? Move config.inc.php to webdata?
+- Diferent config for each journal? Move config.inc.php to webdata?
 - Move config to a webUI?
 - Use OJS templates?
 - Use OJS notification system?
