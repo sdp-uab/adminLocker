@@ -42,28 +42,8 @@ class AdminLockerPlugin extends GenericPlugin {
         $adminLockerCssUrl = $baseUrl . '/plugins/generic/adminLocker/adminlocker.css';
         $templateMgr->addStyleSheet($adminLockerCssUrl);
 
-        //An alternative approach?
-        //$fbv =& $templateMgr->getFBV();
-
         $templateMgr->register_outputfilter(array('AdminLockerPlugin', 'lockerOutputFilter'));
     }
-
-    /** 
-     * Helper function to modify HTML.
-     * Credit to: http://stackoverflow.com/questions/2087103/innerhtml-in-phps-domdocument
-     */
-    function DOMinnerHTML(DOMNode $element) 
-    { 
-        $innerHTML = ""; 
-        $children  = $element->childNodes;
-
-        foreach ($children as $child) 
-        { 
-            $innerHTML .= $element->ownerDocument->saveHTML($child);
-        }
-
-        return $innerHTML; 
-    } 
 
     /**
      * Disable html elements in content area using "PHP Simple HMTL DOM Parser"
@@ -104,8 +84,7 @@ class AdminLockerPlugin extends GenericPlugin {
                     if ($disabledPages[$whereAmI] == 'info') {
 
                         // Improvements: 
-                        // Replace it all with a OJS template?
-                        // Match and replace using DOMDocument or simpleXML?
+                        // Replace it all with an OJS template?
 
                         $pattern = '/<body.*<\/body>/s';
 
@@ -154,12 +133,6 @@ class AdminLockerPlugin extends GenericPlugin {
                         }
 
                         if (($disabledPages[$whereAmI] == 'links') || ($disabledPages[$whereAmI] == 'all')) {
-
-                            //An alternative: Replace links with spans?
-                            /* $newOutput = str_replace('<a ','<span ', $output);
-                            $output=$newOutput;
-                            $newOutput = str_replace('</a>','</span>', $output);
-                            $output=$newOutput;*/
 
                             $pattern = '/a href="([^"]*)"/';
                             $replace = 'a href="javascript:void(0)"';
