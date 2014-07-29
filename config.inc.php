@@ -21,11 +21,12 @@
 [debug]
 
 ; To lock pages you need it's "pageTitle": Set this variable to TRUE 
-; to show the "pageTitle" in the footer of each page.
+; to show the "pageTitle" in the content area of each page.
 ; If you prefer, you can also enable smarty {debug} in the OJS templates
 ; and check the variable $pageTitle of the page/form you want to lock.
 
-pageTitle = FALSE
+pageTitle = TRUE
+; pageTitle = FALSE
 
 
 

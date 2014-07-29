@@ -17,4 +17,5 @@
   <message key="plugins.generic.adminlocker.notification.description">Contact your global site administrator if you need to reach it.</message>
   <message key="plugins.generic.adminlocker.notification.goBack">Go back</message>
   <message key="plugins.generic.adminlocker.debug.info">To lock this page, add this line to the end of the [adminlocker] module's config file</message>
+  <message key="plugins.generic.adminlocker.debug.disable">To disable this waring box, set the variable as follows: "pageTitle = FALSE"</message>
 </locale>

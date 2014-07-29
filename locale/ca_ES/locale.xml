@@ -17,4 +17,5 @@
   <message key="plugins.generic.adminlocker.notification.description">Contacta amb l'administrador global del lloc si et cal accedir-hi.</message>
   <message key="plugins.generic.adminlocker.notification.goBack">Tornar</message>
   <message key="plugins.generic.adminlocker.debug.info">Per blocar aquesta pàgina, afegeix la següent línia al final del fitxer de configuració del mòdul [adminlocker]</message>
+  <message key="plugins.generic.adminlocker.debug.disable">Per a desactivar aquest avís, modifica la variable de la següent manera: "pageTitle = FALSE"</message>
 </locale>

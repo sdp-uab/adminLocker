@@ -17,4 +17,5 @@
   <message key="plugins.generic.adminlocker.notification.description">Contacta con el administrador global del sitio si necesitas acceder.</message>
   <message key="plugins.generic.adminlocker.notification.goBack">Volver</message>
   <message key="plugins.generic.adminlocker.debug.info">Para bloquear esta página, añade la siguiente línia al final del fixero de configuración del módulo [adminlocker]</message>
+  <message key="plugins.generic.adminlocker.debug.disable">Para desactivar este aviso, modifica la variable del siguiente modo: "pageTitle = FALSE"</message>
 </locale>
