@@ -27,8 +27,7 @@
 
 ; pageTitle = TRUE
 pageTitle = FALSE
-
-
+showLocked = TRUE
 
 ;;;;;;;;;;;;;;;;;;;;
 ; Allowed Users    ;
