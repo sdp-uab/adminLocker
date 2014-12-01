@@ -25,8 +25,8 @@
 ; If you prefer, you can also enable smarty {debug} in the OJS templates
 ; and check the variable $pageTitle of the page/form you want to lock.
 
-; pageTitle = TRUE
-pageTitle = FALSE
+pageTitle = TRUE
+; pageTitle = FALSE
 showLocked = TRUE
 
 ;;;;;;;;;;;;;;;;;;;;
@@ -207,9 +207,16 @@ common.languages = "all"                            ; /manager/languages
     ; plugins.importexport.quickSubmit.displayName = "all"
     ; plugins.importexport.erudit.selectArticle = "all"
     ; plugins.importexport.medra.displayName = "all"
-    ; plugins.importexport.crossref.displayName = "all"
-    ; plugins.importexport.crossref.export.selectIssue = "all"
-    ; plugins.importexport.crossref.export.selectArticle = "all"
+    plugins.importexport.crossref.displayName = "all"
+    plugins.importexport.crossref.export.selectIssue = "all"
+    plugins.importexport.crossref.export.selectArticle = "all"
+    plugins.importexport.crossref.export.selectUnregistered = "info"
+
+    ;; Bug: Crossref plugin don't ID correctly a few pages.
+    plugins.importexport.common.settings = "all"                                                                                                             
+    plugins.importexport.common.export.selectIssue = "all"
+    plugins.importexport.common.export.selectArticle = "all"
+
 
 ;; Journal Manager: Users
 ;; No restrictions applied.
