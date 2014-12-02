@@ -25,8 +25,8 @@
 ; If you prefer, you can also enable smarty {debug} in the OJS templates
 ; and check the variable $pageTitle of the page/form you want to lock.
 
-pageTitle = TRUE
-; pageTitle = FALSE
+; pageTitle = TRUE
+pageTitle = FALSE
 showLocked = TRUE
 
 ;;;;;;;;;;;;;;;;;;;;
@@ -39,6 +39,10 @@ showLocked = TRUE
 ; and will be able to reach the forms normally.
 user[] = 'admin'
 user[] = 'root'
+user[] = 'gbiblioteca'
+user[] = 'mbria'
+user[] = 'psanso'
+user[] = 'gestor'
 
 
 
@@ -210,10 +214,10 @@ common.languages = "all"                            ; /manager/languages
     plugins.importexport.crossref.displayName = "all"
     plugins.importexport.crossref.export.selectIssue = "all"
     plugins.importexport.crossref.export.selectArticle = "all"
-    plugins.importexport.crossref.export.selectUnregistered = "info"
+    plugins.importexport.crossref.export.selectUnregistered = "all"
 
     ;; Bug: Crossref plugin don't ID correctly a few pages.
-    plugins.importexport.common.settings = "all"                                                                                                             
+    plugins.importexport.common.settings = "all"
     plugins.importexport.common.export.selectIssue = "all"
     plugins.importexport.common.export.selectArticle = "all"
 
